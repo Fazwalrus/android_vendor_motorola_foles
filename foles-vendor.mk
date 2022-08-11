@@ -247,7 +247,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
     vendor/motorola/foles/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/motorola/foles/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
-    vendor/motorola/foles/proprietary/vendor/lib/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui_vendor.so \
+    vendor/motorola/foles/proprietary/vendor/lib/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_afd.so \
+    vendor/motorola/foles/proprietary/vendor/lib/libmot_bu24218_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_bu24218_factory.so \
+    vendor/motorola/foles/proprietary/vendor/lib/libmot_invensense_st.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_invensense_st.so \
+    vendor/motorola/foles/proprietary/vendor/lib/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_lux_standardization.so \
     vendor/motorola/foles/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
     vendor/motorola/foles/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/motorola/foles/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
@@ -337,6 +340,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_afd.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/libmot_bu24218_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_bu24218_factory.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/libmot_invensense_st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_invensense_st.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_lux_standardization.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
