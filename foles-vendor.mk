@@ -8,10 +8,24 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/lib/libchromaflash.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libchromaflash.so \
     vendor/motorola/foles/proprietary/lib64/libseemore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libseemore.so \
+    vendor/motorola/foles/proprietary/system/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf \
+    vendor/motorola/foles/proprietary/system/etc/permissions/com.motorola.mod.protocols.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod.protocols.xml \
+    vendor/motorola/foles/proprietary/system/etc/permissions/com.motorola.mod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod.xml \
+    vendor/motorola/foles/proprietary/system/etc/permissions/com.motorola.mod_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod_config.xml \
+    vendor/motorola/foles/proprietary/system/etc/permissions/com.motorola.mod_v2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.mod_v2.xml \
+    vendor/motorola/foles/proprietary/system/etc/permissions/privapp-permissions-com.motorola.modservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.modservice.xml \
+    vendor/motorola/foles/proprietary/system/etc/permissions/privapp-permissions-com.motorola.projectormod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.projectormod.xml \
+    vendor/motorola/foles/proprietary/system/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml \
+    vendor/motorola/foles/proprietary/system/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml \
+    vendor/motorola/foles/proprietary/system/lib/libmodmanager_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmodmanager_system.so \
+    vendor/motorola/foles/proprietary/system/lib64/libmodhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmodhw.so \
+    vendor/motorola/foles/proprietary/system/lib64/libmodmanager_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmodmanager_system.so \
+    vendor/motorola/foles/proprietary/system/lib64/libvibratorhw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvibratorhw.so \
+    vendor/motorola/foles/proprietary/system/lib64/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/foles/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
-    vendor/motorola/foles/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice \
     vendor/motorola/foles/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service_64 \
     vendor/motorola/foles/proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.imgtuner@1.0-service \
+    vendor/motorola/foles/proprietary/vendor/bin/mods_camd:$(TARGET_COPY_OUT_VENDOR)/bin/mods_camd \
     vendor/motorola/foles/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/motorola/foles/proprietary/vendor/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon_main \
     vendor/motorola/foles/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
@@ -25,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/motorola/foles/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/foles/proprietary/vendor/etc/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml \
-    vendor/motorola/foles/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc \
     vendor/motorola/foles/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc \
     vendor/motorola/foles/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc \
     vendor/motorola/foles/proprietary/vendor/etc/motorola/firmware/WDC-SDINDDC4-128G-128G.fw:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/firmware/WDC-SDINDDC4-128G-128G.fw \
@@ -230,6 +243,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
     vendor/motorola/foles/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
     vendor/motorola/foles/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
+    vendor/motorola/foles/proprietary/vendor/lib/com.motorola.mod@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.mod@1.0_vendor.so \
     vendor/motorola/foles/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/foles/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/motorola/foles/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
@@ -247,6 +261,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
     vendor/motorola/foles/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/motorola/foles/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
+    vendor/motorola/foles/proprietary/vendor/lib/libiio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiio.so \
+    vendor/motorola/foles/proprietary/vendor/lib/libmodmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmodmanager.so \
     vendor/motorola/foles/proprietary/vendor/lib/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_afd.so \
     vendor/motorola/foles/proprietary/vendor/lib/libmot_bu24218_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_bu24218_factory.so \
     vendor/motorola/foles/proprietary/vendor/lib/libmot_invensense_st.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmot_invensense_st.so \
@@ -264,6 +280,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
     vendor/motorola/foles/proprietary/vendor/lib/motorola.hardware.camera.device@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.device@1.0_vendor.so \
     vendor/motorola/foles/proprietary/vendor/lib/motorola.hardware.camera.imgtuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.imgtuner@1.0.so \
+    vendor/motorola/foles/proprietary/vendor/lib/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.iio.so \
     vendor/motorola/foles/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so \
     vendor/motorola/foles/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
     vendor/motorola/foles/proprietary/vendor/lib64/camera/com.mot.eeprom.cat24c64_s5kgm1sp_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.cat24c64_s5kgm1sp_eeprom.so \
@@ -322,6 +339,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/motorola/foles/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/motorola/foles/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.0.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/com.motorola.mod@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.mod@1.0_vendor.so \
     vendor/motorola/foles/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/foles/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/motorola/foles/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
@@ -340,6 +358,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/libiio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiio.so \
+    vendor/motorola/foles/proprietary/vendor/lib64/libmodmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmodmanager.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_afd.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libmot_bu24218_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_bu24218_factory.so \
     vendor/motorola/foles/proprietary/vendor/lib64/libmot_invensense_st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_invensense_st.so \
@@ -362,3 +382,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/foles/proprietary/vendor/lib64/sensors.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.tof.so \
     vendor/motorola/foles/proprietary/vendor/lib64/sensors.tof.vl53l1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.tof.vl53l1.so \
     vendor/motorola/foles/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
+
+PRODUCT_PACKAGES += \
+    ModFmwkProxyService \
+    ModService \
+    ProjectorApp
